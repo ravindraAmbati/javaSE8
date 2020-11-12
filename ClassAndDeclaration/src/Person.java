@@ -70,6 +70,24 @@ public class Person {
         System.out.println(p5.firstName);
         System.out.println(p5.lastName);
         System.out.println(p5.gender);
+
+        Person p6 = new Person();
+        System.out.println("P6 is a class field of type Person");
+        System.out.println(p6);
+        System.out.println(p6.toString());
+        System.out.println(p6.id);
+        System.out.println(p6.firstName);
+        System.out.println(p6.lastName);
+        System.out.println(p6.gender);
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", gender=" + gender +
+                '}';
+    }
 }
