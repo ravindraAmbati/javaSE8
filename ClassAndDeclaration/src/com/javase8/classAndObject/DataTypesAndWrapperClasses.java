@@ -1,3 +1,5 @@
+package com.javase8.classAndObject;
+
 public class DataTypesAndWrapperClasses {
 
     private byte b; // 8-bit
@@ -36,7 +38,7 @@ public class DataTypesAndWrapperClasses {
     }
 
     public static void main(String[] args) {
-        System.out.println("DataTypesAndWrapperClasses");
+        System.out.println("com.javase8.classAndObject.DataTypesAndWrapperClasses");
         System.out.println();
         DataTypesAndWrapperClasses obj1 = new DataTypesAndWrapperClasses();
         System.out.println(obj1);
@@ -65,13 +67,13 @@ public class DataTypesAndWrapperClasses {
 
         System.out.println(obj1.anInteger);
         System.out.println(obj1.i);
-        System.out.println("compare:    "+obj1.anInteger.equals(1256));
+        System.out.println("compare:    " + obj1.anInteger.equals(1256));
         obj1.aLong = new Long(1256);
-        System.out.println("compare:    "+obj1.anInteger.equals(obj1.aLong));
+        System.out.println("compare:    " + obj1.anInteger.equals(obj1.aLong));
 
         obj1.i = 123;
         obj1.l = 123;
-        System.out.println(obj1.i== obj1.l);
+        System.out.println(obj1.i == obj1.l);
 
         obj1.anInteger = new Integer(123);
         obj1.aLong = new Long(123);
@@ -81,7 +83,7 @@ public class DataTypesAndWrapperClasses {
 
     @Override
     public String toString() {
-        return "DataTypesAndWrapperClasses{" +
+        return "com.javase8.classAndObject.DataTypesAndWrapperClasses{" +
                 "b=" + b +
                 ", s=" + s +
                 ", i=" + i +
