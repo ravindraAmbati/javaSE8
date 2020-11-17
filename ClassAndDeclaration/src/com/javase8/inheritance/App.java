@@ -1,5 +1,7 @@
 package com.javase8.inheritance;
 
+import java.time.LocalDate;
+
 public class App {
 
     // IS-A: Student IS-A Person; Faculty IS-A Person
@@ -34,5 +36,19 @@ public class App {
 
         Faculty faculty = new Faculty(12346547, "firstName", "lastName", 'M', facultyAddress, facultyContactInfo, "HoD", "Computers");
         System.out.println(faculty);
+
+        Address simpleAddress = new Address("personFirstLine", "personCity", 123456L);
+
+        ContactInfo simpleContactInfo = new ContactInfo(123465789L, "personal@person.com");
+
+        Person firstPerson = new Person(1234567890L, "first", "last", 'M', simpleAddress, simpleContactInfo);
+        firstPerson.setDob(LocalDate.of(2000,11,19));
+
+        Student firstStudent = new Student(256987614L, "firstStudent", "lastStudent", 'M', simpleAddress, simpleContactInfo, 12, 8.75f);
+        firstStudent.setDob(LocalDate.of(1999,1,26));
+
+        Faculty firstFaculty = new Faculty(12346547, "firstName", "lastName", 'M', facultyAddress, facultyContactInfo, "HoD", "Computers");
+        firstFaculty.setDob(LocalDate.of(1988,3,30));
+
     }
 }
