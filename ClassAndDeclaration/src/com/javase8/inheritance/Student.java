@@ -8,6 +8,10 @@ public class Student extends Person {
     private int grade;
     private float gpa;
 
+    Student(){
+        System.out.println("Student object is created");
+    }
+
     public Student(long id, String firstName, String lastName, char gender, Address address, ContactInfo contactInfo, int grade, float gpa) {
         super(id, firstName, lastName, gender, address, contactInfo);
         this.grade = grade;

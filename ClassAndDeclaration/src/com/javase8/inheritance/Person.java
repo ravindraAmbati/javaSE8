@@ -15,7 +15,7 @@ public class Person {
     private int age;
 
     public Person(){
-
+        System.out.println("Person object is created");
     }
 
     public LocalDate getDob() {

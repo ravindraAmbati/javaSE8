@@ -8,6 +8,10 @@ public class Faculty extends Person {
     private String role;
     private String skills;
 
+    Faculty(){
+        System.out.println("Faculty object is created");
+    }
+
     public Faculty(long id, String firstName, String lastName, char gender, Address address, ContactInfo contactInfo, String role, String skills) {
         super(id, firstName, lastName, gender, address, contactInfo);
         this.role = role;

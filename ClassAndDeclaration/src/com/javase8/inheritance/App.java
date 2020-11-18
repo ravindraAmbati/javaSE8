@@ -16,6 +16,12 @@ public class App {
 ////    Student
     public static void main(String[] args) {
 
+        Person personEmpty = new Person();
+        Student studentEmpty = new Student();
+        Faculty facultyEmpty = new Faculty();
+        Person student_IS_A_Person = new Student();
+        Person faculty_IS_A_Person = new Faculty();
+
         Address personAddress = new Address("personFirstLine", "personCity", 123456L);
 
         ContactInfo personContactInfo = new ContactInfo(123465789L, "personal@person.com");
