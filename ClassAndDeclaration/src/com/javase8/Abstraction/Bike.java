@@ -5,6 +5,7 @@ public class Bike implements Vehicle{
 
     Bike(){
         System.out.println("Bike object is created");
+        System.out.println(CONSTANT);
     }
     @Override
     public void start() {

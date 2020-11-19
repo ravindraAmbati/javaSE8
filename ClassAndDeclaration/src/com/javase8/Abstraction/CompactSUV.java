@@ -10,6 +10,7 @@ public class CompactSUV extends SUV{
 
     CompactSUV(){
         System.out.println("CompactSUV object is created");
+        System.out.println(CONSTANT);
     }
 
     @Override
