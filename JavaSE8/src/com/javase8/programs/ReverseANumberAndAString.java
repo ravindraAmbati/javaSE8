@@ -19,7 +19,7 @@ public class ReverseANumberAndAString {
         System.out.println(reverseAString3("{}()[]:',.<>?/"));
     }
 
-    private static String reverseAString3(String s) {
+    public static String reverseAString3(String s) {
         StringBuilder sb = new StringBuilder(s);
         return sb.reverse().toString();
     }
@@ -36,7 +36,7 @@ public class ReverseANumberAndAString {
     }
 
     private static String reverseAString2(String s) {
-        // Incomplete
+        // todo: incomplete
         byte[] bytes = s.getBytes();
         int l = s.length();
         String reverse = "";
