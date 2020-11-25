@@ -10,9 +10,9 @@ public class ReverseANumberAndAString {
         System.out.println(reverseAString1("9876")); // 6789
         System.out.println(reverseAString1("1234567890")); //0987654321 // zero is not ignored
         System.out.println(reverseAString1("{}()[]:',.<>?/"));
-//        System.out.println(reverseAString2("Java"));
-//        System.out.println(reverseAString2("9876"));
-//        System.out.println(reverseAString2("1234567890"));
+        System.out.println(reverseAString2("Java"));
+        System.out.println(reverseAString2("9876"));
+        System.out.println(reverseAString2("1234567890"));
         System.out.println(reverseAString3("Java"));
         System.out.println(reverseAString3("9876")); // 6789
         System.out.println(reverseAString3("1234567890")); //0987654321 // zero is not ignored
@@ -36,13 +36,16 @@ public class ReverseANumberAndAString {
     }
 
     private static String reverseAString2(String s) {
-        // todo: incomplete
+        System.out.println("reverseAString2");
         byte[] bytes = s.getBytes();
         int l = s.length();
-        String reverse = "";
+        byte[] reverseByteArray = new byte[bytes.length];
+        int j = 0;
         for (int i = l - 1; i >= 0; i--) {
-            reverse = reverse + bytes[i];
+            reverseByteArray[j] = bytes[i];
+            j++;
         }
+        String reverse = new String(reverseByteArray);
         return reverse;
     }
 

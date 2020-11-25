@@ -31,11 +31,11 @@ public class NumberNature {
         return true;
     }
 
-    private static boolean isOdd(int n) {
+    public static boolean isOdd(int n) {
         return (n % 2) != 0;
     }
 
-    private static boolean isEven(int n) {
+    public static boolean isEven(int n) {
         return (n % 2) == 0;
     }
 }
