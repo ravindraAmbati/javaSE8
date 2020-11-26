@@ -49,7 +49,7 @@ public class ReverseANumberAndAString {
         return reverse;
     }
 
-    private static long reverseANumber(long n) {
+    public static long reverseANumber(long n) {
         long r = 0;
         while (n > 0) {
             r = r * 10 + n % 10;
