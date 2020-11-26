@@ -17,6 +17,14 @@ public class FindMissingNumberInFirstNNaturalNumbers {
         System.out.println(find(nums4, n));
         int[] nums5 = {2, 3, 4, 5, 6, 7, 8, 9, 10};
         System.out.println(find(nums5, n));
+
+        System.out.println("Not in a order");
+        int[] nums6 = {1, 6, 7, 8, 2, 3, 4, 5, 9}; //10
+        System.out.println(find(nums6, n));
+        int[] nums7 = {1, 2, 6, 8, 9, 10, 3, 4, 5}; //17
+        System.out.println(find(nums7, n));
+        int[] nums8 = {5, 6, 7, 8, 9, 10, 2, 3, 4}; //1
+        System.out.println(find(nums8, n));
     }
 
     private static long find(int[] nums, int n) {
