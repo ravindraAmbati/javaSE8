@@ -9,6 +9,29 @@ public class SingleExceptionHandling {
     static int[] num = {1, 2, 3, 4};
 
     public static void main(String[] args) {
+        m1();
+        m2();
+    }
+
+    private static void m2() {
+        System.out.println("m2");
+        System.out.println("### START ###");
+
+        try {
+            System.out.println(i / j);
+            System.out.println(s.length());
+            System.out.println(Integer.parseInt(val) * 100);
+            System.out.println(num[4]);
+        } catch (ArithmeticException | NullPointerException | NumberFormatException | ArrayIndexOutOfBoundsException e) {
+            System.out.println("in a single catch");
+            e.printStackTrace();
+        }
+
+        System.out.println("### END ###");
+    }
+
+    private static void m1() {
+        System.out.println("m1");
         System.out.println("### START ###");
         try {
             System.out.println(i / j);
@@ -32,4 +55,6 @@ public class SingleExceptionHandling {
         }
         System.out.println("### END ###");
     }
+
+
 }
