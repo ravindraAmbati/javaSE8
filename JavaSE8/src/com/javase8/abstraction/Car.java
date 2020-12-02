@@ -1,4 +1,4 @@
-package com.javase8.Abstraction;
+package com.javase8.abstraction;
 
 public abstract class Car implements Vehicle{
 // IS-A: Car IS-A Vehicle

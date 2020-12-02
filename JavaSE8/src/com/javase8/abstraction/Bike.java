@@ -1,4 +1,4 @@
-package com.javase8.Abstraction;
+package com.javase8.abstraction;
 
 public class Bike implements Vehicle{
     // IS-A: Bike IS-A Vehicle
