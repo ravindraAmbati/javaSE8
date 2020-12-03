@@ -2,6 +2,7 @@ package com.javase8.collections.list;
 
 import java.util.ArrayList;
 
+// indexing and allow duplicates
 public class ArrayListExample {
 
     // ArrayList - DataStructure - Array

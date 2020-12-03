@@ -1,8 +1,8 @@
 package com.javase8.collections.list;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 
+// indexing and allow duplicates
 public class LinkedListExample {
     // ArrayList - DataStructure - Array
     // best - insert | remove
