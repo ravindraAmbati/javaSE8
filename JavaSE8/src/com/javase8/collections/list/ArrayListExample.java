@@ -4,6 +4,9 @@ import java.util.ArrayList;
 
 public class ArrayListExample {
 
+    // ArrayList - DataStructure - Array
+    // best - read | update
+    // worst - insert | remove
     public static void main(String[] args) {
         listOfInteger();
         listOfString();
