@@ -2,7 +2,7 @@ package com.javase8.collections.set;
 
 import java.util.Objects;
 
-public class Book {
+public class Book implements Comparable<Book> {
 
     private String title;
     private String author;
@@ -96,5 +96,11 @@ public class Book {
     @Override
     public int hashCode() {
         return Objects.hash(title, author, publisher, noOfPages, price, isin);
+    }
+
+
+    @Override
+    public int compareTo(Book anotherBook) {
+        return Integer.compare(this.noOfPages, anotherBook.noOfPages);
     }
 }

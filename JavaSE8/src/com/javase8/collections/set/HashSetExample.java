@@ -17,7 +17,7 @@ public class HashSetExample {
     }
 
     private static void setOfBooks() {
-        System.out.println("listOfBooks");
+        System.out.println("setOfBooks");
         HashSet<Book> hashSet = new HashSet<>();
         System.out.println(hashSet.isEmpty()); // true
         Book book1 = new Book("title", "author", "publisher", 100, 10.23d, "123456");
