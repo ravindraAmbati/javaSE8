@@ -1,6 +1,8 @@
 package com.javase8.collections.map;
 
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
 
 import static com.javase8.programs.ReverseANumberAndAString.reverseANumber;
 
@@ -38,6 +40,17 @@ public class HashMapExample {
         System.out.println("The Book publisher of ISIN 789: " + map.get("789").getPublisher());
         System.out.println("The Book total pages of ISIN 456: " + map.get("456").getNoOfPages());
         System.out.println("The Book title of ISIN 258: " + map.get("258").getTitle());
+
+        System.out.println("###START-Iterator###");
+        Set<String> bookHashSet = map.keySet();
+        Iterator<String> iterator = bookHashSet.iterator();
+        while (iterator.hasNext()) {
+            String key = iterator.next();
+            System.out.println("Key: " + key);
+            System.out.println("Value: " + map.get(key));
+        }
+        System.out.println("###END-Iterator###");
+
     }
 
     private static void mapOfInteger_String() {

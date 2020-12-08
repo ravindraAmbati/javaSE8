@@ -5,6 +5,7 @@ import com.javase8.collections.set.bookComparators.BookPriceTitleComparator;
 import com.javase8.collections.set.bookComparators.BookTitleComparator;
 import com.javase8.collections.set.bookComparators.BookTitlePriceComparator;
 
+import java.util.Iterator;
 import java.util.TreeSet;
 
 public class TreeSetExample {
@@ -31,6 +32,14 @@ public class TreeSetExample {
         treeSetBookTitle.add(M);
         treeSetBookTitle.add(O);
         treeSetBookTitle.add(B);
+
+        System.out.println("###START-Iterator###");
+        Iterator<Book> iterator = treeSetBookTitle.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+        System.out.println("###END-Iterator###");
+
         System.out.println(treeSetBookTitle);
     }
 

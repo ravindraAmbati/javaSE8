@@ -1,6 +1,9 @@
 package com.javase8.collections.list;
 
+import java.util.Collections;
+import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.ListIterator;
 
 // indexing and allow duplicates
 public class LinkedListExample {
@@ -55,6 +58,22 @@ public class LinkedListExample {
         System.out.println(linkedList.indexOf(book7)); // 5
         System.out.println(linkedList);
         System.out.println(linkedList.lastIndexOf(book7)); // last position of the value sameString
+
+
+        System.out.println("###START-Iterator###");
+        Iterator<Book> iterator = linkedList.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+        System.out.println("###END-Iterator###");
+
+        System.out.println("###START-listIterator###");
+        ListIterator<Book> listIterator = linkedList.listIterator();
+        while (listIterator.hasNext()) {
+            System.out.println(listIterator.next());
+        }
+        System.out.println("###END-listIterator###");
+
         linkedList.clear();
         System.out.println(linkedList);
         System.out.println(linkedList.isEmpty());
@@ -96,6 +115,9 @@ public class LinkedListExample {
         linkedList.add("sameString");
         System.out.println(linkedList);
         System.out.println(linkedList.lastIndexOf("sameString")); // last position of the value sameString
+        System.out.println("before sorting" + linkedList);
+        Collections.sort(linkedList);
+        System.out.println("after sorting" + linkedList);
         linkedList.clear();
         System.out.println(linkedList);
         System.out.println(linkedList.isEmpty());

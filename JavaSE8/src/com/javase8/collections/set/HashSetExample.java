@@ -2,11 +2,8 @@ package com.javase8.collections.set;
 
 // no order and no duplicates
 
-import com.javase8.collections.set.Book;
-
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.LinkedList;
+import java.util.Iterator;
 
 public class HashSetExample {
 
@@ -50,6 +47,15 @@ public class HashSetExample {
         hashSet.add(book7);
         hashSet.add(book7);
         System.out.println(hashSet);
+
+        System.out.println("###START-Iterator###");
+        Iterator<Book> iterator = hashSet.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+        System.out.println("###END-Iterator###");
+
+
         hashSet.clear();
         System.out.println(hashSet);
         System.out.println(hashSet.isEmpty());

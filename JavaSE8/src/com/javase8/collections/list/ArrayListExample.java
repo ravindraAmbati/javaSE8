@@ -1,6 +1,9 @@
 package com.javase8.collections.list;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.ListIterator;
 
 // indexing and allow duplicates
 public class ArrayListExample {
@@ -56,6 +59,21 @@ public class ArrayListExample {
         System.out.println(arrayList.indexOf(book7)); // 5
         System.out.println(arrayList);
         System.out.println(arrayList.lastIndexOf(book7)); // last position of the value sameString
+
+        System.out.println("###START-Iterator###");
+        Iterator<Book> iterator = arrayList.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+        System.out.println("###END-Iterator###");
+
+        System.out.println("###START-listIterator###");
+        ListIterator<Book> listIterator = arrayList.listIterator();
+        while (listIterator.hasNext()) {
+            System.out.println(listIterator.next());
+        }
+        System.out.println("###END-listIterator###");
+
         arrayList.clear();
         System.out.println(arrayList);
         System.out.println(arrayList.isEmpty());
@@ -138,6 +156,11 @@ public class ArrayListExample {
         arrayList.add(150);
         System.out.println(arrayList);
         System.out.println(arrayList.lastIndexOf(150)); // last position of the value 150
+
+        System.out.println("before sorting" + arrayList);
+        Collections.sort(arrayList);
+        System.out.println("after sorting" + arrayList);
+
         arrayList.clear();
         System.out.println(arrayList);
         System.out.println(arrayList.isEmpty());
