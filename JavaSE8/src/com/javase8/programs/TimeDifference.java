@@ -2,8 +2,6 @@ package com.javase8.programs;
 
 import java.time.Duration;
 import java.time.LocalTime;
-import java.time.Period;
-import java.time.temporal.Temporal;
 
 public class TimeDifference {
 
