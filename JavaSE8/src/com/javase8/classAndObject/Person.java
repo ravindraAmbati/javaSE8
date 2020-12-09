@@ -6,6 +6,7 @@ public class Person {
     private String firstName;
     private String lastName;
     private char gender;
+    static private String CITY = "SAMECITY";
 
     public Person() {
         System.out.println("Default Constructor");
@@ -51,35 +52,36 @@ public class Person {
         System.out.println(p1.firstName);
         System.out.println(p1.lastName);
         System.out.println(p1.gender);
-
+        System.out.println(p1.CITY);
         Person p2 = new Person();
         System.out.println("com.javase8.classAndObject.Person object p2");
         System.out.println(p2.id);
         System.out.println(p2.firstName);
         System.out.println(p2.lastName);
         System.out.println(p2.gender);
-
+        p2.CITY = "P2CITY";
+        System.out.println(p2.CITY);
         Person p3 = new Person(963258741);
         System.out.println("com.javase8.classAndObject.Person object p3");
         System.out.println(p3.id);
         System.out.println(p3.firstName);
         System.out.println(p3.lastName);
         System.out.println(p3.gender);
-
+        System.out.println(p3.CITY);
         Person p4 = new Person("Java", "SE8");
         System.out.println("com.javase8.classAndObject.Person object p4");
         System.out.println(p4.id);
         System.out.println(p4.firstName);
         System.out.println(p4.lastName);
         System.out.println(p4.gender);
-
+        System.out.println(p4.CITY);
         Person p5 = new Person(25986314, "firstPerson", "secondPerson", 'M');
         System.out.println("com.javase8.classAndObject.Person object p5");
         System.out.println(p5.id);
         System.out.println(p5.firstName);
         System.out.println(p5.lastName);
         System.out.println(p5.gender);
-
+        System.out.println(p5.CITY);
         Person p6 = new Person();
         System.out.println("P6 is a class field of type com.javase8.classAndObject.Person");
         System.out.println(p6);
