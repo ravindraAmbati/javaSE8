@@ -3,6 +3,16 @@ package designPatterns.builder;
 import java.time.LocalDate;
 import java.util.Objects;
 
+//builder pattern for immutability | complexity | method chaining
+//
+//public class
+//All fields should be private final
+//make private constructor
+//no setters but  getters | equals | hashCode | toString
+//public static final inner class "builder"
+//private fields
+//        setters with field names
+//        build() should return a new object of the main class
 public class Product {
 
     private final long isin;
