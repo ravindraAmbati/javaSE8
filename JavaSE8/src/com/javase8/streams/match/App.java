@@ -29,7 +29,7 @@ public class App {
         System.out.println(students.stream().anyMatch(studentScoredLessThan5_9));
 
         System.out.print("all student who scored less than 5.90 ");
-        System.out.println(students.stream().anyMatch(studentScoredLessThan5_9));
+        System.out.println(students.stream().allMatch(studentScoredLessThan5_9));
 
         Predicate<Student> studentScoredLessThan6 = s -> s.getGpa() < 6d;
         System.out.print("any student who scored less than 6 ");

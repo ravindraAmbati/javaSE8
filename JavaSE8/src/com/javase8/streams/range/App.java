@@ -13,7 +13,7 @@ public class App {
         System.out.println("java7");
         int i = 1;
         int sum = 0;
-        while (i <= 1000) {
+        while (i < 1001) {
             sum = sum + i;
             i++;
         }
